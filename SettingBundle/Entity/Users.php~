@@ -1,0 +1,151 @@
+<?php
+
+namespace SettingBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Users
+ *
+ * @ORM\Table(name="users")
+ * @ORM\Entity
+ */
+class Users
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="username", type="string", length=8, nullable=false)
+     */
+    private $username;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=32, nullable=false)
+     */
+    private $password;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="temp_pass", type="string", length=32, nullable=false)
+     */
+    private $tempPass;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="temp_pass_active", type="integer", nullable=false)
+     */
+    private $tempPassActive;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="first_name", type="string", length=25, nullable=false)
+     */
+    private $firstName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_name", type="string", length=25, nullable=false)
+     */
+    private $lastName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=35, nullable=false)
+     */
+    private $email;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="dialing_code", type="integer", nullable=false)
+     */
+    private $dialingCode;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="phone", type="integer", nullable=false)
+     */
+    private $phone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="city", type="string", length=80, nullable=false)
+     */
+    private $city;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="country", type="string", length=80, nullable=false)
+     */
+    private $country;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="thumb_path", type="string", length=150, nullable=false)
+     */
+    private $thumbPath;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img_path", type="string", length=150, nullable=false)
+     */
+    private $imgPath;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="active", type="integer", nullable=false)
+     */
+    private $active;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="level_access", type="integer", nullable=false)
+     */
+    private $levelAccess;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="act_key", type="string", length=80, nullable=false)
+     */
+    private $actKey;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reg_date", type="string", length=45, nullable=false)
+     */
+    private $regDate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_active", type="string", length=50, nullable=false)
+     */
+    private $lastActive;
+
+
+}

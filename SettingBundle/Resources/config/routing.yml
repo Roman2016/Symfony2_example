@@ -1,0 +1,47 @@
+setting_homepage:
+    path:     /
+    defaults: { _controller: SettingBundle:Default:index }
+    methods:  GET
+
+setting_login:
+    path:     /login
+    defaults: { _controller: SettingBundle:Security:login }
+    methods:  [GET, POST]
+
+setting_register:
+    path:     /register
+    defaults: { _controller: SettingBundle:Security:register }
+    methods:  [GET, POST]
+
+setting_pass_reset:
+    path:     /pass_reset
+    defaults: { _controller: SettingBundle:Security:passReset }
+    methods:  [GET, POST]
+
+setting_help:
+    path:     /help
+    defaults: { _controller: SettingBundle:Info:help }
+    methods:  GET
+
+setting_about:
+    path:     /about
+    defaults: { _controller: SettingBundle:Info:about }
+    methods:  GET
+
+setting_konkyrs:
+    path:     /konkyrs
+    defaults: { _controller: SettingBundle:Info:konkyrs }
+    methods:  GET
+
+setting_rules:
+    path:     /rules
+    defaults: { _controller: SettingBundle:Info:rules }
+    methods:  GET
+
+setting_blog:
+    path:     /blog
+    defaults: { _controller: SettingBundle:Blog:index }
+    methods:  GET
+
+logout:
+    path: /logout

@@ -1,0 +1,12 @@
+#services:
+#    setting.example:
+#        class: SettingBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+
+services:
+    sendMail_service:
+        class:        SettingBundle\DI\SendMailService
+        #arguments:    ['%app.test_service.par%']
+
+    create_json_message_service:
+        class:        SettingBundle\DI\CreateJsonMessageService
